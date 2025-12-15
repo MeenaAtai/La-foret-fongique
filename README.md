@@ -67,7 +67,8 @@ Les éléments principaux incluent :
    - https://frakassets.itch.io/free-rotating-key
  - **Portail :**
    - https://opengameart.org/content/portals
-   
+ - **Vies :**
+   - https://redreeh.itch.io/pixelhearts-16x16)
   
 
 
