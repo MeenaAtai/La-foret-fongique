@@ -36,7 +36,7 @@ Les éléments principaux incluent :
 ### Interface Menu
 - Interface composée de **sprites**, **boutons** et signaux connectés aux actions du jeu.  
 - Navigation simple et intuitive entre les écrans (menu, jeu, redémarrage, etc.).
-- 
+
 ### Système de vie et de morts
 - Interface composée de **sprites de coeur** connectés aux actions du jeu et démontrer le nombre de vies du joueur.  
 - Perdre une vie lorsqu'on touche un ennemie ou/et touche l'eau.
