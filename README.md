@@ -1,15 +1,16 @@
-# La forêt fongique
+# Tp4_La forêt fongique
 
 ## Description
 Petit projet réalisé avec **Godot 4** comprenant un niveau jouable, un personnage dynamique et un environnement physique interactif.  
-Le jeu met en place une logique de mouvement, d’interactions et d’états du personnage dans un espace cohérent et fonctionnel.
+Le jeu met en place une logique de mouvement, d’interactions et d’états du personnage dans un espace cohérent et fonctionnel. Le but de ce jeu est de rammaser les clés pour afin de déverouiller les portes. De plus, cela permet de collecter le gros cristal à la fin pour terminer le jeu.
 
 Les éléments principaux incluent :
-- l’utilisation d’un **TileMap** pour créer un environnement interactif et cohérent,
-- la gestion des **entrées clavier** déclenchant mouvements, sons et animations,
-- l’intégration d’un **parallax background** qui s’adapte automatiquement à la taille de la fenêtre,
-- des événements de gameplay permettant au joueur **d’éliminer les ennemis en leur sautant dessus**,
-- une **interface de menu** utilisant sprites et boutons synchronisés avec les événements du jeu.
+- L’utilisation d’un **TileMap** pour créer un environnement interactif et cohérent,
+- La gestion des **entrées clavier** déclenchant mouvements, sons et animations,
+- L’intégration d’un **parallax background** qui s’adapte automatiquement à la taille de la fenêtre,
+- Des événements de gameplay permettant au joueur **d’éliminer les ennemis en leur sautant dessus**,
+- Une **interface de menu** utilisant sprites et boutons synchronisés avec les événements du jeu,
+- Une intégration de système de vies.
 
 
 ## Fonctionnalités
