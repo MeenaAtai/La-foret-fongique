@@ -1,4 +1,4 @@
-# TP3 – Niveaux, Progression & Menu
+# La forêt fongique
 
 ## Description
 Petit projet réalisé avec **Godot 4** comprenant un niveau jouable, un personnage dynamique et un environnement physique interactif.  
