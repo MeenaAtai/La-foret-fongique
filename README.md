@@ -10,7 +10,7 @@ Les éléments principaux incluent :
 - L’intégration d’un **parallax background** qui s’adapte automatiquement à la taille de la fenêtre,
 - Des événements de gameplay permettant au joueur **d’éliminer les ennemis en leur sautant dessus**,
 - Une **interface de menu** utilisant sprites et boutons synchronisés avec les événements du jeu,
-- Une intégration de système de vies.
+- Une intégration de système de vies et de morts
 
 
 ## Fonctionnalités
