@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ygri5aoexkv4"]
+
+[ext_resource type="Texture2D" uid="uid://ckkpx4fwll5b1" path="res://assets/UI_UX/All 16x16 Health Heart Sets/16x16 Health Heart Blue.png" id="1_v30as"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycbwg"]
+atlas = ExtResource("1_v30as")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_krgnv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycbwg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="heart" type="AnimatedSprite2D"]
+position = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_krgnv")
+animation = &"idle"
+autoplay = "idle"
