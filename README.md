@@ -2,7 +2,7 @@
 
 ## Description
 Petit projet réalisé avec **Godot 4** comprenant un niveau jouable, un personnage dynamique et un environnement physique interactif.  
-Le jeu met en place une logique de mouvement, d’interactions et d’états du personnage dans un espace cohérent et fonctionnel. Le but de ce jeu est de rammaser les clés pour afin de déverouiller les portes. De plus, cela permet de collecter le gros cristal à la fin pour terminer le jeu.
+Le jeu met en place une logique de mouvement, d’interactions et d’états du personnage dans un espace cohérent et fonctionnel. Le but de ce jeu est de rammaser les clés pour afin de déverouiller les portes. De plus, cela permet de collecter le gros cristal à la fin pour terminer le jeu. Il faut éviter rentrer en contact avec l'eau et éliminer les ennemies avec précaution.
 
 Les éléments principaux incluent :
 - L’utilisation d’un **TileMap** pour créer un environnement interactif et cohérent,
