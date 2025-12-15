@@ -22,7 +22,7 @@ Les éléments principaux incluent :
 
 ### Objets interactifs & Comportements dynamiques
 - Le joueur peut éliminer un ennemi en **sautant dessus**, grâce aux collisions verticales.  
-- Ajout de **sons**, **effets visuels** et **particules** selon les événements (mort ennemi, saut réussi, etc.).
+- Ajout de **sons**, **effets visuels** et **particules** selon les événements (mort ennemi, saut réussi, collecte de clés etc.).
 
 ### Déplacements du joueur (Clavier)
 - **Flèche gauche / A** : déplacement vers la gauche + animation de course (`run`).  
