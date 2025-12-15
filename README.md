@@ -68,7 +68,7 @@ Les éléments principaux incluent :
  - **Portail :**
    - https://opengameart.org/content/portals
  - **Vies :**
-   - https://redreeh.itch.io/pixelhearts-16x16)
+   - https://redreeh.itch.io/pixelhearts-16x16
   
 
 
