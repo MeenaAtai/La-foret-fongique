@@ -1,7 +1,7 @@
 # Tp4_La forêt fongique
 
-## Description
-Petit projet réalisé avec **Godot 4** comprenant un niveau jouable, un personnage dynamique et un environnement physique interactif.  
+## Description :
+Petit projet réalisé avec **Godot 4** comprenant trois niveaux jouables, un personnage dynamique et un environnement physique interactif.  
 Le jeu met en place une logique de mouvement, d’interactions et d’états du personnage dans un espace cohérent et fonctionnel. Le but de ce jeu est de ramasser les clés pour afin de déverouiller les portes. De plus, cela permet de collecter le gros cristal à la fin pour terminer le jeu. Il faut éviter rentrer en contact avec l'eau et éliminer les ennemies avec précaution.
 
 Les éléments principaux incluent :
@@ -13,7 +13,7 @@ Les éléments principaux incluent :
 - Une intégration de **système de vies et de morts** pour rendre le jeu plus difficile.
 
 
-## Fonctionnalités
+## Fonctionnalités :
 
 ### TileMap
 - Détection des collisions entre le joueur, le TileMap et les ennemis.  
@@ -36,9 +36,18 @@ Les éléments principaux incluent :
 ### Interface Menu
 - Interface composée de **sprites**, **boutons** et signaux connectés aux actions du jeu.  
 - Navigation simple et intuitive entre les écrans (menu, jeu, redémarrage, etc.).
+- 
+### Système de vie et de morts
+- Interface composée de **sprites de coeur** connectés aux actions du jeu et démontrer le nombre de vies du joueur.  
+- Perdre une vie lorsqu'on touche un ennemie ou/et touche l'eau.
+
+### Accomplissement ou échec
+- Affichage de "Échec" ou "Réussite"
+- Démontrer réussite au jeu si le joueur peut débloquer la porte du dernier niveau en activant le lever
+- Démontrer échec au jeu si le joueur perd tous ces vies ou touche à l'eau
 
  
- ## Crédits
+ ## Crédits :
  - **joueur :**
    - https://jesshiyoo.itch.io/little-axion
  - **Ennemie :**
