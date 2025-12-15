@@ -19,7 +19,8 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player:
-		body.activate_lever(self)
+		turn_lever(facing)  # active le levier directement
+
 
 func turn_lever(direction: int) -> void:
 	if activated:

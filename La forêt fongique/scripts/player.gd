@@ -108,7 +108,7 @@ func animations(direction):
 			sprite.play("fall")
 
 
-# ☠️ MORT
+# MORT
 func mourir():
 	if is_dead:
 		return
@@ -118,3 +118,7 @@ func mourir():
 	audiodeath.play()
 	sprite.play("death")
 	get_tree().change_scene_to_file("res://scenes/jeu_level_game_over.tscn")
+
+func activate_lever(lever):
+	print("Lever activé :", lever.link_code)
+	# ici tu peux faire quelque chose, par ex. ouvrir une porte
