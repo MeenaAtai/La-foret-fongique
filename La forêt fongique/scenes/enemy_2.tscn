@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dv1uly5jv2ju5"]
+[gd_scene load_steps=29 format=3 uid="uid://dv1uly5jv2ju5"]
 
 [ext_resource type="Script" uid="uid://bemkq57px18bg" path="res://scripts/enemy_2.gd" id="1_7du6s"]
 [ext_resource type="Texture2D" uid="uid://c5yo0yhmn1qqn" path="res://assets/personnage/ennemis/ennemie_02/MysticalMushroom/Attack1.png" id="1_lxmbh"]
@@ -388,6 +388,10 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u64o8"]
 size = Vector2(23, 26)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_hv1ai"]
+a = Vector2(-32, 0)
+b = Vector2(32, 0)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lxmbh"]
 size = Vector2(32, 13)
 
@@ -412,6 +416,10 @@ hframes = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 13)
 shape = SubResource("RectangleShape2D_u64o8")
+
+[node name="limite" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("SegmentShape2D_hv1ai")
 
 [node name="explosion" type="CPUParticles2D" parent="."]
 emitting = false
@@ -444,6 +452,7 @@ stream = ExtResource("13_n88sx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="getDamagedBox"]
 position = Vector2(0, -6.5)
 shape = SubResource("RectangleShape2D_lxmbh")
+debug_color = Color(0.296985, 0.617252, 0.350236, 0.42)
 
 [node name="getHit" type="Area2D" parent="."]
 

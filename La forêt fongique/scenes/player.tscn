@@ -656,7 +656,11 @@ stream = ExtResource("5_b26j0")
 [node name="audioDeath" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_3v2ag")
 
+[node name="HurtTimer" type="Timer" parent="."]
+one_shot = true
+
 [node name="health_bar" type="CanvasLayer" parent="."]
+layer = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="health_bar"]
 offset_left = 320.0
@@ -682,20 +686,5 @@ custom_minimum_size = Vector2(11.65, 0)
 layout_mode = 2
 
 [node name="heart" parent="health_bar/HBoxContainer/heart3" instance=ExtResource("13_jej6c")]
-
-[node name="heart4" type="TextureRect" parent="health_bar/HBoxContainer"]
-custom_minimum_size = Vector2(11.65, 0)
-layout_mode = 2
-
-[node name="heart" parent="health_bar/HBoxContainer/heart4" instance=ExtResource("13_jej6c")]
-
-[node name="heart5" type="TextureRect" parent="health_bar/HBoxContainer"]
-custom_minimum_size = Vector2(11.65, 0)
-layout_mode = 2
-
-[node name="heart" parent="health_bar/HBoxContainer/heart5" instance=ExtResource("13_jej6c")]
-
-[node name="HurtTimer" type="Timer" parent="."]
-wait_time = 0.4
 
 [connection signal="timeout" from="HurtTimer" to="." method="_on_hurt_timer_timeout"]

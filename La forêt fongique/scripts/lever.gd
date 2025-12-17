@@ -9,17 +9,27 @@ const TEXTURES := {
 }
 
 var activated := false
-var facing := -1  # -1 gauche, 1 droite
 
-@onready var sprite = $Sprite2D
+@onready var sprite: Sprite2D = $Sprite2D
+
 
 func _ready() -> void:
 	sprite.texture = TEXTURES["left"]
 	monitoring = true
 
+
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player:
-		turn_lever(facing)  # active le levier directement
+		var direction := 0
+
+		if body.velocity.x > 0:
+			direction = 1
+		elif body.velocity.x < 0:
+			direction = -1
+		else:
+			return
+
+		turn_lever(direction)
 
 
 func turn_lever(direction: int) -> void:
@@ -27,9 +37,8 @@ func turn_lever(direction: int) -> void:
 		return
 
 	activated = true
-	facing = direction
 
-	if facing == 1:
+	if direction == 1:
 		sprite.texture = TEXTURES["right"]
 	else:
 		sprite.texture = TEXTURES["left"]

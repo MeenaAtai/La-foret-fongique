@@ -88,9 +88,9 @@ scale = Vector2(12.1667, 6.91667)
 texture = ExtResource("1_v0dq2")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 424.0
+offset_left = 456.0
 offset_top = 104.0
-offset_right = 774.0
+offset_right = 806.0
 offset_bottom = 184.0
 theme_override_colors/font_outline_color = Color(0.576471, 0.341176, 0.388235, 1)
 theme_override_constants/outline_size = 20

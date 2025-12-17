@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://brphd3hedra6i"]
+[gd_scene load_steps=30 format=3 uid="uid://brphd3hedra6i"]
 
 [ext_resource type="Script" uid="uid://72lyxnq5s7tv" path="res://scripts/enemy.gd" id="1_6rrpu"]
 [ext_resource type="Texture2D" uid="uid://dd5neagmgr4fo" path="res://assets/personnage/ennemis/ennemie_01/CursedMushroom/Idle.png" id="2_u5km1"]
@@ -389,6 +389,10 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ya3f7"]
 size = Vector2(23, 26)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_u5km1"]
+a = Vector2(-32, 0)
+b = Vector2(32, 0)
+
 [sub_resource type="Gradient" id="Gradient_8d1r1"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
@@ -417,6 +421,10 @@ hframes = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 13)
 shape = SubResource("RectangleShape2D_ya3f7")
+
+[node name="limite" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("SegmentShape2D_u5km1")
 
 [node name="explosion" type="CPUParticles2D" parent="."]
 position = Vector2(0, 8)
@@ -451,6 +459,7 @@ stream = ExtResource("12_krq8r")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="getDamagedBox"]
 position = Vector2(0, -6.5)
 shape = SubResource("RectangleShape2D_pwjut")
+debug_color = Color(0.301031, 0.620129, 0.293845, 0.42)
 
 [node name="getHit" type="Area2D" parent="."]
 

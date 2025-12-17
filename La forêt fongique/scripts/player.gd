@@ -5,7 +5,7 @@ const SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 
 var jump_count = 0
-var health = 5
+var health = 3
 
 var is_dead := false
 var is_hurt := false
@@ -24,7 +24,6 @@ func _ready() -> void:
 	for child in hearts_parent.get_children():
 		hearts_list.append(child)
 
-
 #DÉGÂTS
 func take_damage():
 	if is_dead or is_hurt:
@@ -40,7 +39,6 @@ func take_damage():
 
 func _on_hurt_timer_timeout():
 	is_hurt = false
-
 
 func update_heart_display():
 	for i in range(hearts_list.size()):
@@ -104,7 +102,7 @@ func animations(direction):
 	else:
 		if velocity.y < 0:
 			sprite.play("jump")
-		elif velocity.y > 0:
+		elif velocity.y > 0: 
 			sprite.play("fall")
 
 
@@ -117,8 +115,16 @@ func mourir():
 	velocity = Vector2.ZERO
 	audiodeath.play()
 	sprite.play("death")
-	get_tree().change_scene_to_file("res://scenes/jeu_level_game_over.tscn")
+	
+	
+	var death_timer = $HurtTimer
+	death_timer.wait_time = 1.0
+	death_timer.one_shot = true
+	add_child(death_timer)
+	death_timer.start()
+	death_timer.timeout.connect(func():
+		get_tree().change_scene_to_file("res://scenes/jeu_level_game_over.tscn")
+	)
 
 func activate_lever(lever):
 	print("Lever activé :", lever.link_code)
-	# ici tu peux faire quelque chose, par ex. ouvrir une porte

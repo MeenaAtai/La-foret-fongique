@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cti7oy5jd10kb" path="res://assets/clés/free_rotating_key_frakassets/Nouveau projet (1).png" id="6_047uy"]
 
 [node name="HUD" type="CanvasLayer"]
+layer = 0
 script = ExtResource("1_uo2fv")
 
 [node name="Node2D" type="Node2D" parent="."]
