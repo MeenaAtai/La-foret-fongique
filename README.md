@@ -37,9 +37,30 @@ Les éléments principaux incluent :
 - Interface composée de **sprites**, **boutons** et signaux connectés aux actions du jeu.  
 - Navigation simple et intuitive entre les écrans (menu, jeu, redémarrage, etc.).
 
+### Ennemies
+- Détection des collisions entre le joueur et les ennemis.  
+- Élimination du enemmie par le joueur en sautant par dessus  
+- Donne des dommage au joueur (enlève une vie) si en contact avec le joueur par ses côtés.
+
 ### Système de vie et de morts
 - Interface composée de **sprites de coeur** connectés aux actions du jeu et démontrer le nombre de vies du joueur.  
 - Perdre une vie lorsqu'on touche un ennemie ou/et touche l'eau.
+
+### Système de score
+- Interface connectés aux actions du jeu et démontrer le score (nombre d'ennemies éliminés) du joueur.
+
+### Système de clés, de portails et d'obstacles (serrures)
+- Interface composée de **sprites de clés** connectés aux actions du portail et possibilité d'accéder à un niveau supérieur.
+- Capacité de débloqué les obstacles (serrures du portail) pour afin rendre au prochain niveau en collectant toutes les clés selon dans le HUD.
+
+### Système de porte et de levier (dernier niveau)
+- **Des sprites** connectés aux actions du jeu.  
+- Possibilité d'ouvrir la porte en activant le levier.
+- Pour l'ouvrir, le joueur doit passer à travers du levier.
+
+### Récupération du cristal
+- **Des sprites de cristal** connectés aux actions du jeu.  
+- Objectif du jeu.
 
 ### Accomplissement ou échec
 - Affichage de "Échec" ou "Réussite"
@@ -47,7 +68,7 @@ Les éléments principaux incluent :
 - Démontrer échec au jeu si le joueur perd tous ces vies ou touche à l'eau
 
  
- ## Crédits :
+## Crédits :
  - **joueur :**
    - https://jesshiyoo.itch.io/little-axion
  - **Ennemie :**
